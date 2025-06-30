@@ -9,6 +9,10 @@ plugins {
     id("dev.icerock.moko.gradle.detekt")
 }
 
+kotlin{
+ //   jvm()
+}
+
 android {
     namespace = "dev.icerock.moko.permissions"
 }
