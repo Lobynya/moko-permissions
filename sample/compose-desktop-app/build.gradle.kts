@@ -17,7 +17,9 @@ kotlin {
     sourceSets {
         val commonMain by getting{
             dependencies {
-                implementation("dev.icerock.moko:permissions:0.19.1")
+                implementation("dev.icerock.moko:permissions:0.19.1"){
+                    exclude(group = "dev.icerock.moko", module = "permissions-jvm")
+                }
             }
         }
         val jvmMain by getting {
